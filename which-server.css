@@ -1,0 +1,58 @@
+/* crimson admin bar */
+#wpadminbar.is-local,
+#wpadminbar.is-local .ab-top-secondary {
+	background:#6B2C2C;
+}
+	/* left side */
+	#wpadminbar.is-local .quicklinks > ul > li {
+		border-right-color:#7a4242; /* was #555555 */
+	}
+	#wpadminbar.is-local .quicklinks > ul > li > a,
+	#wpadminbar.is-local .quicklinks > ul > li > .ab-empty-item {
+		border-right-color:#562323; /* was #333333 */
+	}
+	
+	/* right side */
+	#wpadminbar.is-local .quicklinks .ab-top-secondary > li {
+		border-left-color:#562323; /* was #333333 */
+	}
+	#wpadminbar.is-local .quicklinks .ab-top-secondary > li > a,
+	#wpadminbar.is-local .quicklinks .ab-top-secondary > li > .ab-empty-item {
+		border-left-color:#7a4242; /* was #555555 */
+	}
+
+/* wsp button */
+#wp-admin-bar-wsp a.ab-item {
+	padding-right:4px;
+	padding-left:4px;
+}
+	#wp-admin-bar-wsp a.ab-item span {
+		display: inline-block;
+		background: #FFF;
+		border-radius:50px;
+		height:14px;
+		line-height:14px;
+		padding: 3px 7px;
+		font-size:10px;
+		text-transform:uppercase;
+		color:#6B2C2C;
+	}
+	
+/* local only badge when no admin-bar */
+#whichserver {
+	position:absolute;
+	top:0;
+	right:5px;
+	z-index:9999;
+}
+	#whichserver a {
+		display: block;
+		border-radius:0 0 50px 50px;
+		background:#6B2C2C;
+		color:#FFF;
+		font-size:10px;
+		padding: 1px 7px 3px;
+		border:1px solid #7a4242;
+		-webkit-box-shadow:  0px 1px 3px 1px rgba(0, 0, 0, .25);
+        box-shadow:  0px 1px 3px 1px rgba(0, 0, 0, .25);
+	}
